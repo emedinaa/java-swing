@@ -3,7 +3,6 @@ package com.uigv.samples.data;
 import com.uigv.samples.model.InsuredEntity;
 
 import javax.swing.*;
-import java.util.ArrayList;
 import java.util.List;
 
 public class CustomListModel extends AbstractListModel {

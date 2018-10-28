@@ -7,11 +7,8 @@ import com.uigv.samples.ui.BasePage;
 import com.uigv.samples.ui.CustomDialog;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
 import java.util.List;
 
 /**

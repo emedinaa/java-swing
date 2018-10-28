@@ -28,7 +28,6 @@ public class MyPage extends BasePage {
             }
         });
 
-
         registrarConsultaButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -44,7 +43,5 @@ public class MyPage extends BasePage {
                 Navigation.goToPage(MyPage.this,reportPage);
             }
         });
-
     }
-
 }

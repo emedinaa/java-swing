@@ -41,24 +41,13 @@ public class ReportPage  extends BasePage{
             }
         });
 
-        loadInsureds();
+        loadData();
     }
 
-    private void loadInsureds(){
-        /*DefaultListModel<InsuredEntity> modelList=new DefaultListModel<>();
-
-        for (InsuredEntity insuredEntity:insuredEntityList) {
-            modelList.addElement(insuredEntity);
-        }*/
-
-        /*CustomListModel customListModel= new CustomListModel(insuredEntityList);
-        list1.setModel(customListModel);*/
+    private void loadData(){
 
         // Column Names
         String[] columnNames = { "Apellidos y Nombres", "Age","Consultas","Monto"};
-
-        //String[] item1 = {"Eduardo José","Medina Alfaro","40898479","18"};
-        //String[] item2 = {"José Eduado","Medina Pacheco","40898479","80"};
         buildData();
 
         DefaultTableModel model= new DefaultTableModel();
