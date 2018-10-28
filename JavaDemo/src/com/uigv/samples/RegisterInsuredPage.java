@@ -63,6 +63,8 @@ public class RegisterInsuredPage extends BasePage {
         insuredEntity.setAge(age);
         AppData.getInstance().getInsuredProvider().addInsured(insuredEntity);
 
+        System.out.println("InsuredEntity "+insuredEntity.toString());
+
         CustomDialog.show(this,"Asegurado agregado !");
     }
 

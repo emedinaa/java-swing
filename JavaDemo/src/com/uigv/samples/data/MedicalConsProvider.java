@@ -30,6 +30,29 @@ public class MedicalConsProvider {
         return medicalConsEntityList;
     }
 
+    public int medicalConsultationsByDni(@NotNull String dni){
+        if(medicalConsEntityList!=null && medicalConsEntityList.isEmpty()){
+            return 0;
+        }
+        int count=0;
+        for (MedicalConsEntity item :medicalConsEntityList) {
+            if(item.getInsuredDNI().equals(dni)){
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public List<MedicalConsEntity> medicalConsultationListByDni(@NotNull String dni){
+        List<MedicalConsEntity> mcList= new ArrayList<>();
+        for (MedicalConsEntity item :medicalConsEntityList) {
+            if(item.getInsuredDNI().equals(dni)){
+                mcList.add(item);
+            }
+        }
+        return mcList;
+    }
+
     public void clear(){
         medicalConsEntityList.clear();
     }

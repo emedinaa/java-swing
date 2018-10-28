@@ -19,8 +19,6 @@ public class InsuredEntity {
         this.dni = dni;
     }
 
-    private double payment;
-
     public String getName() {
         return name;
     }
@@ -45,11 +43,13 @@ public class InsuredEntity {
         this.age = age;
     }
 
-    public double getPayment() {
-        return payment;
-    }
-
-    public void setPayment(double payment) {
-        this.payment = payment;
+    @Override
+    public String toString() {
+        return "InsuredEntity{" +
+                "name='" + name + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", dni='" + dni + '\'' +
+                ", age=" + age +
+                '}';
     }
 }

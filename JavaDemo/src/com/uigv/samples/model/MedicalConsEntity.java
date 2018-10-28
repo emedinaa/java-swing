@@ -8,6 +8,7 @@ public class MedicalConsEntity {
     private int id;
     private String insuredDNI;
     private int count;
+    private Double payment;
 
     public int getId() {
         return id;
@@ -31,5 +32,23 @@ public class MedicalConsEntity {
 
     public void setCount(int count) {
         this.count = count;
+    }
+
+    public Double getPayment() {
+        return payment;
+    }
+
+    public void setPayment(Double payment) {
+        this.payment = payment;
+    }
+
+    @Override
+    public String toString() {
+        return "MedicalConsEntity{" +
+                "id=" + id +
+                ", insuredDNI='" + insuredDNI + '\'' +
+                ", count=" + count +
+                ", payment=" + payment +
+                '}';
     }
 }
